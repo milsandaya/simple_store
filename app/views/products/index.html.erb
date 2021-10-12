@@ -3,7 +3,8 @@
 <ul>
   <% @products.each do |product| %>
     <li>
-      <%= product.title %>,
+      <a href="/products/<%= product.id %>"">
+        <%= product.title %>,
       <%= product.price %>,
       <%= product.stock_quantity %>
     </li>
